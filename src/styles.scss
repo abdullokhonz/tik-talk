@@ -1,0 +1,102 @@
+@import "fonts";
+@import "margins";
+
+:root {
+  --dark-color: #000000;
+  --light-color: #FFFFFF;
+  --primary-color: #AE7AFF;
+  --gray-color: #5F646D;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'JetBrains Mono', sans-serif;
+  background: var(--dark-color);
+  color: var(--light-color);
+  background-image: url(/assets/imgs/background.jpg);
+  overflow-x: hidden;
+}
+
+.skill-tag {
+  padding: 0 8px;
+  border-radius: 4px;
+  border: 1px solid var(--light-color);
+  display: inline;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  height: 24px;
+}
+
+.btn {
+  width: 100%;
+  background: var(--primary-color);
+  color: var(--dark-color);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+  border: 1px solid var(--dark-color);
+}
+
+.btn-shadow {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: -4px;
+    right: -4px;
+    background: var(--gray-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+  }
+}
+
+.h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 56px;
+}
+
+.h6 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+subtitle {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tt-control-label {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  display: block;
+}
+
+.tt-input {
+  width: 42vw;
+  margin-top: 8px;
+  display: block;
+  border: 1px solid var(--light-color);
+  border-radius: 4px;
+  padding: 12px 20px;
+  background: var(--dark-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: 'JetBrains Mono', sans-serif;
+  color: var(--light-color);
+}
